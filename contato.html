@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> <!--para leitura em celulares-->
+        <title>Contato Tractorsol</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/rcons-transport/32/tire_disk-128.png">
+        <link rel="stylesheet" href="style-contato.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> <!--importando fonte para usar em toda pagina-->
+    </head>
+
+    <body>
+        <header>
+          <div class="menu">
+              <h1><img src="image/logo.png" alt="Logo da Oficina Agrícola Tractorsol"></h1> <!--usando a opção alt para dar acessibilidade para problemas visuais, ou se a imagem nao carregar corretamente, temos essa alternativa-->
+              
+              <nav>
+                <ul>
+                  <li><a href="index.html">Início</a></li>
+                  <li><a href="index.html#servicos"target="_blank">Serviços</a></li>
+                  <li><a href="index.html#marcas"target="_blank">Marcas</a></li>
+                  <li><a href="index.html#trabalhos"target="_blank">Trabalhos</a></li>
+                </ul>
+              </nav> 
+          </div> 
+        </header>
+        <main>
+            <section class="formulario">
+                <form>
+                    <!--INICIO inputs basicos padrao-->
+                    <label for="nomesobrenome">Nome e sobrenome</label>
+                    <input type="text" id="nomesobrenome" class="input-padrao" required
+                    placeholder="Nome"> <!--required = campo obrigatorio-->
+    
+                    <label for="empresa">Empresa/Sítio/Fazenda</label>
+                    <input type="text" id="empresa" class="input-padrao" required placeholder="Email">
+    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"> <!--placeholder = exemplo de preenchimento do campo-->
+    
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                    <!--FIM inputs basicos padrao-->
+                    
+                    <!--Entradas de mensagens livre (caixa de texto)
+                    O textarea, para entradas de texto de mais de uma linha-->
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+    
+                    <!--radio buton (selecionando opções de contato)-->
+                    <fieldset> <!--fieldset = usado para agrupar varios campos+textos dentro de um formulario, todos os dados referente a um assunto, por exemplo, um formulario
+                    que ira receber os dados de cartao de credito, ou os dados de um endereço, então usa-se filedset para agrupar esses campos -->
+                        <legend>Como prefere o nosso contato?</legend> <!--sempre que usar o fieldset, para colocar o paragrafo usa-se a tag de titulo = legend-->
+                        <label for="radio-email">
+                            <input id="radio-email" name="grupodoradio" type="radio" value="email">
+                            Email
+                        </label>
+                       
+                        <label for="radio-telefone">
+                            <input id="radio-telefone" name="grupodoradio" type="radio" value="telefone">
+                            Telefone 
+                        </label>
+                                     
+                        <label for="radio-whatsapp">
+                            <input id="radio-whatsapp" name="grupodoradio" type="radio" value="whatsapp" checked> <!--checked = essa opção marcada como sugestao-->
+                            Whatsapp
+                        </label>
+                    </fieldset> 
+                  
+                    <!--campo de seleção de um item, qual horario prefere ser atendido-->
+                        <fieldset class="horario_atendimento">
+                            <legend>Qual horário prefere ser atendido?</legend>
+                            <select class="periodo_atendimento">
+                                <option>Manhã</option>
+                                <option>Tarde</option>
+                                <option>Noite</option>
+                            </select>
+                        </fieldset>
+
+                    <!--checkbox para enviar ou não novidades por email-->
+                    <label class="checkbox">
+                        <input type="checkbox" checked>Gostaria de receber nossas novidades por email?
+                    </label>
+    
+                    <input type="submit" value="Enviar formulário" class="enviar">  <!--no fim terá um input do tipo submit, ou seja de envio-->           
+                </form>
+            </section>    
+
+            <!--criando tabela de horarios-->
+            <section class="horarios">
+                <table>
+                    <thead> <!--cabeçalho da tabela-->
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                         </tr>
+                    </thead>
+    
+                    <tbody> <!--corpo da tabela-->
+                        <tr>
+                            <td>Segunda</td>
+                            <td>7h30 ~ 18h</td>
+                        </tr>
+    
+                        <tr>
+                            <td>Terça</td>
+                            <td>7h30 ~ 18h</td>
+                        </tr>
+    
+                        <tr>
+                            <td>Quarta</td>
+                            <td>7h30 ~ 18h</td>
+                         </tr>
+    
+                        <tr>
+                            <td>Quinta</td>
+                            <td>7h30 ~ 18h</td>
+                         </tr>
+    
+                        <tr>
+                            <td>Sexta</td>
+                            <td>7h30 ~ 18h</td>
+                         </tr>
+                    </tbody>
+    
+                </table>
+    
+            </section>
+
+            <section class="mapa">
+                <h3 class="titulo-principal">Onde estamos</h3>
+                
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.
+                574699321636!2d-47.31007385118956!3d-23.258558684759635!2m3!1f0!2f0!3f0!3m2!1i1024!2i
+                768!4f13.1!3m3!1m2!1s0x94cf503e63caac59%3A0x28e45d91825411de!2sAlchapal%20%26%20Alves
+                !5e0!3m2!1spt-BR!2sbr!4v1619472941429!5m2!1spt-BR!2sbr" width="100%" height="300" 
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+                
+                <p>Telefone <a href="tel:(11) 9 5930-7132   (11) 4023-3158">
+                  (11) 9 5930-7132  •  (11) 4023-3158</a> </p>
+            </section>
+
+
+        </main>
+        <footer>          
+            <p class="Copyrigth">&copy; Copyrigth Oficina Agricola Tractorsol </p>
+          </footer>    
+   
+      </body>
+  </html>        

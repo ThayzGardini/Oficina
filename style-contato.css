@@ -1,0 +1,179 @@
+/* INICIO DA CONFIGURAÇÃO DO CABEÇALHO*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background: #ffffff;   
+    padding: 20px 0;
+}
+
+.menu{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: coral;
+    text-decoration: underline;
+}
+/* FIM DA CONFIGURAÇÃO DO CABEÇALHO*/
+
+/*INICIO DO CONTEUDO DA PAGINA*/
+main {
+    margin: 0 0 -272px 0px;
+    width: 100%;
+}
+
+.formulario{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE,#888888);
+} 
+
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 100px 10px; /*dando um espaço de 10px da label pra baixo*/
+}
+
+.input-padrao  {
+    display: block;
+    margin: 0 100px 17px; /*dando um espaço de 20px do input pra baixo*/
+    padding: 10px 25px; /*aumentando tamanho interno do meu input*/
+    width: 56%; /*aumentando a largura*/
+}
+
+.checkbox {
+    margin: 21px 92px;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s background; /*qndo usar o hover, a transição da mudança de qndo passar o mouse, poderá ser alterada para
+    não ser instantaneo e sim com algum segundo a mais*/
+    cursor: pointer; /*sempre que o mouse estiver em cima do botão aparecer a maozinha*/
+    transition: 1s transform;  /*aumentar o botão com 1 segundo ao inves de instantaneo*/
+    margin: 16px 205px;
+}
+
+.enviar:hover { /*passando com o mouse por cima do botao*/
+    background: darkgreen;
+    transform: scale(1.2);
+    
+    /*
+    transform: scale(1.2); /*para aumentar o botao ao passar o mouse por cima em 20%, é feito o calculo da scale 1.2*/
+    /*
+    transform: rotate(70deg); /*inclina 70 graus*/
+   
+    /*ao usar duas propriedades iguais para configurar, sempre será valida a ultima adicionada, ou seja
+    nesse caso acima a rotate sobescreve a scale, então para isso nao acontecer, podemos usar as duas em 
+    uma linha assim:
+    transform: rotate(70deg) scale(1.2);*/   
+}
+
+.horarios{
+    margin: -20px auto -19px;
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(#888888,#7c7676);
+}
+
+
+
+table {
+    margin: 20px 294px 8px;
+}
+
+thead {
+    background: #000000;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px; /*8px pra cima e pra baixo  15 para os lados*/
+}
+
+.horario_atendimento{
+    margin: 25px 0px 34px;   
+}
+
+.periodo_atendimento{
+    margin: 5px 107px 8px;
+}
+
+/*INICIO DO CONTEUDO DO MAPA*/
+.mapa{
+   
+    padding: 2em 0px;
+    margin: 12px 0px 20px 0px;
+    background: linear-gradient(#7c7676,#333131);
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em; /*proporcional o tamanho, usando 2em que diz que será o dobro do tamanho de 15px, ou seja seja 30px*/
+}
+
+/*FIM DO CONTEUDO DO MAPA*/
+
+
+/*FIM DO CONTEUDO DA PAGINA*/
+
+/*INCIO DO RODAPÉ DA PAGINA*/
+
+footer {
+    position: relative;
+    text-align: center;
+    padding: 40px 0; 
+    background: #070707;
+    top: 250px;
+}
+
+.Copyrigth { 
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0 ; 
+}
+/*FIM DO RODAPÉ DA PAGINA*/
+
+/*configuração para celulares*/
+@media screen and (max-width:480px){
+    .mapa {
+        width: auto;
+       }
+    
+    }
