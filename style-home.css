@@ -1,0 +1,144 @@
+/* INICIO DA CONFIGURAÇÃO DO CABEÇALHO*/
+.pagina{
+    background-color: #5c5858;
+}
+
+header{
+    background: #ffffff;   
+    padding: 20px 0;
+}
+
+.menu{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: coral;
+    text-decoration: underline;
+}
+/* FIM DA CONFIGURAÇÃO DO CABEÇALHO*/
+
+/*INICIO DO CONTEUDO DA PAGINA*/
+/*INICIO DO CONTEUDO DE SERVIÇOS*/
+.servicos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+    font-style: italic;
+    text-align: center;
+}
+
+.servicos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 0 0 1.5%;
+    padding: 20px 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.servicos li:hover{
+    border-color: coral;
+}
+
+.servicos li:hover h2{
+    font-size: 34px;
+}
+
+.menuservicos {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 10 0 0 0;
+    padding: 1px 1px ;
+    border: 1px solid #000000;
+    border-radius: 60px;    
+}
+
+.servicos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.marcas li{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 0 0 0 0;
+    padding: 1px 1px;
+    border: 1px solid #000000;
+    border-radius: 60px;
+}
+
+/*FIM DO CONTEUDO DE SERVIÇOS*/
+
+/*INICIO DO CONTEUDO DE CONTATOS*/
+div h3 {
+    background-color: #080808; 
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+li p{
+    color:#ffffff;
+    display: inline;
+    vertical-align: top;
+    font-size: 25px;
+}
+/*FIM DO CONTEUDO DE CONTATOS*/
+
+/*INICIO DO CONTEUDO DO MAPA*/
+.mapa{
+    position: absolute;
+    top: 1250px;
+    right: 80px;
+  
+}
+/*FIM DO CONTEUDO DO MAPA*/
+
+/*FIM DO CONTEUDO DA PAGINA*/
+
+/*INCIO DO RODAPÉ DA PAGINA*/
+
+footer {
+    position: relative;
+    text-align: center;
+    padding: 40px 0; 
+    background: #070707;
+    top: 250px;
+}
+
+.Copyrigth { 
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0 ; 
+}
+/*FIM DO RODAPÉ DA PAGINA*/
