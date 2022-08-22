@@ -1,0 +1,242 @@
+/* INICIO DA CONFIGURAÇÃO DO CABEÇALHO*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Acessibilidade da pagina, deixando link invisivel na pagina, apenas para a 
+navegação pular para o conteudo principal, dando mais acessbilidade*/
+.pularConteudo,
+.pularConteudo:active,
+.pularConteudo:focus,
+.pularConteudo:hover {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    display: block;
+    color: transparent;
+    position: absolute;
+}
+
+
+.banner{
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em; /*proporcional o tamanho, usando 2em que diz que será o dobro do tamanho de 15px, ou seja seja 30px*/
+    margin: 0 0 1em; /*proporcional ao tamanho da fonte dela, 1 espaço dela pra baixo*/
+    clear: left;
+    /* color: rgba(0, 0, 0, 0.3); colocando opacidade no texto */
+    /* text-shadow: 2px 2px rgb(0, 0, 0);  sombra em texto */
+}
+
+.titulo-principal:first-letter{ /*Toda primeira letra ficara em negrito*/
+    font-weight: bold;
+}
+
+.titulo-principal:before{
+    content: "🚜 ";   
+}
+
+.titulo-principal:after{
+    content: " 🚜";
+}
+
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+}
+
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.oficina {
+    width: 250px;
+    float: left;
+    margin: 0 20px 20px 20px; /*cima direita baixo esquerda*/
+}
+
+/* .pagina{
+    background-color: #5c5858;
+} */
+
+header{
+    background: #ffffff;   
+    padding: 20px 0;
+}
+
+.menu{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: coral;
+    text-decoration: underline;
+}
+
+
+/* FIM DA CONFIGURAÇÃO DO CABEÇALHO*/
+
+/*INICIO DO CONTEUDO DA PAGINA*/
+/*INICIO DO CONTEUDO DE SERVIÇOS*/
+.servicos-principal{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE,#888888);
+
+}
+
+.servicos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+    font-style: italic;
+    text-align: center;
+
+}
+
+.servicos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 0 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    word-break: break-word;
+}
+
+.servicos li:hover{
+    border-color: coral;
+}
+
+.servicos li:hover p{
+    font-size: 34px;
+}
+/*FIM DO CONTEUDO DE SERVIÇOS*/
+
+/*INCIO DO CONTEUDO DE MARCAS*/
+
+.marcas{
+    padding: 3em 0;
+    background: linear-gradient(#888888,#7c7676);
+}
+
+.conteudo-marcas{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-marcas{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.marcas-empresas{
+    line-height: 1.5; /*altura da linha - espaçamento*/
+}
+
+.marcas-empresas:nth-child(2n) { /*pegando sempre a 2 posição para deixa-la com configuração difenrete*/
+    font-weight: bold;
+}
+
+.marcas-empresas:before{
+    content: " 🚜 ";
+}
+
+/*.marcas-empresas:first-child  configurando só o primeiro elemento
+  .marcas-empresas:last-child  configurando so o ultimo elemento
+  .marcas-empresas:nth-child(4) configurando o elemento de posição 4
+  .marcas-empresas:nth-child(2n) configurando o elemento alterando de 2 em 2
+  */
+
+.imagem-marcas{
+    width: 60%;
+    opacity: 1;
+    transition: 800ms;
+    box-shadow: 10px 10px 10px 0 #000000; /*sombra*/
+}
+
+.imagem-marcas:hover{
+    opacity: 0.3;
+}
+
+/*video INCIO DO CONTEUDO DE TRABALHOS*/
+.trabalhos{
+    /* margin: 2em auto; */
+    text-align: center;
+    padding: 0 0 32px 9px;
+    background: linear-gradient(#7c7676,#070707);/*para dar degrade no fundo*/
+
+    /*degrade tb pode ser em cirulo
+    background:  radial-gradient(#383737 50%,#000000);*/
+
+}
+
+.trabalho-conteudo{
+    width: 940px; 
+    margin: 0 auto;  
+}
+
+/*FIM DO CONTEUDO DA PAGINA*/
+
+/*INCIO DO RODAPÉ DA PAGINA*/
+
+footer {
+    position: relative;
+    text-align: center;
+    padding: 20px 0; 
+    background: #070707;
+}
+
+.Copyrigth { 
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0 ; 
+}
+/*FIM DO RODAPÉ DA PAGINA*/
+
+/*configuração para celulares*/
+@media screen and (max-width:480px){
+.principal, .conteudo-marcas, .trabalho-conteudo, .servicos-principal {
+    width: auto;
+   }
+
+}
