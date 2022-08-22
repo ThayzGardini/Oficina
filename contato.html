@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato Tractorsol</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/rcons-transport/32/tire_disk-128.png">
+       <link rel="stylesheet" href="style-contato.css">
+    </head>
+
+    <body class="pagina">
+        <header>
+          <div class="menu">
+              <h1><img src="image/logo.png" alt="Logo da Oficina Agricola Tractorsol"></h1> <!--usando a opção alt para dar acessibilidade para problemas visuais, ou se a imagem nao carregar corretamente, temos essa alternativa-->
+              
+              <nav>
+                <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="index.html">Serviços</a></li>
+                  <li><a href="#contato" target="_blank">Contatos</a></li>
+                  <li><a href="index.html">Trabalhos</a></li>
+                </ul>
+              </nav> 
+          </div> 
+        </header>
+        <main>
+            <form>
+                <!--INICIO inputs basicos padrao-->
+                <label for="nomesobrenome">Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required> <!--required = campo obrigatorio-->
+
+                <label for="empresa">Empresa/Sitio/Fazenda</label>
+                <input type="text" id="empresa" class="input-padrao" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"> <!--placeholder = exemplo de preenchimento do campo-->
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                <!--FIM inputs basicos padrao-->
+                
+                <!--Entradas de mensagens livre (caixa de texto)
+                O textarea, para entradas de texto de mais de uma linha-->
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+
+                <!--radio buton (selecionando opções de contato)-->
+                <fieldset> <!--fieldset = usado para agrupar varios campos+textos dentro de um formulario, todos os dados referente a um assunto, por exemplo, um formulario
+                que ira receber os dados de cartao de credito, ou os dados de um endereço, então usa-se filedset para agrupar esses campos -->
+                    <legend>Como prefere o nosso contato?</legend> <!--sempre que usar o fieldset, para colocar o paragrafo usa-se a tag de titulo = legend-->
+                    <label for="radio-email">
+                        <input id="radio-email" name="grupodoradio" type="radio" value="email">
+                        Email
+                    </label>
+                   
+                    <label for="radio-telefone">
+                        <input id="radio-telefone" name="grupodoradio" type="radio" value="telefone">
+                        Telefone 
+                    </label>
+                                 
+                    <label for="radio-whatsapp">
+                        <input id="radio-whatsapp" name="grupodoradio" type="radio" value="whatsapp" checked> <!--checked = essa opção marcada como sugestao-->
+                        Whatsapp
+                    </label>
+                </fieldset> 
+              
+                <!--campo de seleção de um item, qual horario prefere ser atendido-->
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+                <!--checkbox para enviar ou não novidades por email-->
+                <label class="checkbox">
+                    <input type="checkbox" checked>Gostaria de receber nossas novidades por email?
+                </label>
+
+                <input type="submit" value="Enviar formulário" class="enviar">  <!--no fim terá um input do tipo submit, ou seja de envio-->           
+            </form>
+            <!--criando tabela de horarios-->
+            <table>
+                <thead> <!--cabeçalho da tabela-->
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                     </tr>
+                </thead>
+
+                <tbody> <!--corpo da tabela-->
+                    <tr>
+                        <td>Segunda</td>
+                        <td>7h30 ~ 18h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Terça</td>
+                        <td>7h30 ~ 18h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Quarta</td>
+                        <td>7h30 ~ 18h</td>
+                     </tr>
+
+                    <tr>
+                        <td>Quinta</td>
+                        <td>7h30 ~ 18h</td>
+                     </tr>
+
+                    <tr>
+                        <td>Sexta</td>
+                        <td>7h30 ~ 18h</td>
+                     </tr>
+                </tbody>
+
+            </table>
+
+
+        </main>
+        <footer>          
+            <p class="Copyrigth">&copy; Copyrigth Oficina Agricola Tractorsol </p>
+          </footer>    
+   
+      </body>
+  </html>        
