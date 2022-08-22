@@ -1,0 +1,112 @@
+/* INICIO DA CONFIGURAÇÃO DO CABEÇALHO*/
+.pagina{
+    background-color: #5c5858;
+}
+
+header{
+    background: #ffffff;   
+    padding: 20px 0;
+}
+
+.menu{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: coral;
+    text-decoration: underline;
+}
+/* FIM DA CONFIGURAÇÃO DO CABEÇALHO*/
+
+/*INICIO DO CONTEUDO DA PAGINA*/
+.servicos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+    font-style: italic;
+    text-align: center;
+}
+
+.servicos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 0 0 1.5%;
+    padding: 20px 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.servicos li:hover{
+    border-color: coral;
+}
+
+.servicos li:hover h2{
+    font-size: 34px;
+}
+
+.servicos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+.link-contato {
+    background-color: #ffffff; 
+    text-align: center;
+
+}
+
+.endereco{
+    color: #000000;
+    padding: 3px;
+    font-style: italic;
+    text-align: center;
+    background-color: #ffffff;
+
+}
+
+li p{
+    color:#ffffff;
+    
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mapa{
+    position: absolute;
+  
+}
+
+/*FIM DO CONTEUDO DA PAGINA*/
+/*INCIO DO RODAPÉ DA PAGINA*/
+
+footer {
+    
+
+}
+/*FIM DO RODAPÉ DA PAGINA*/
